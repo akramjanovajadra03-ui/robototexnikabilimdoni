@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robototexnika Bilimdoni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="#">ROBO<span>TECH</span></a>
+    <div class="header-label">BILIMLAR MAYDONI</div>
+  </header>
+
+  <main>
+    <section id="home" class="screen active">
+      <div class="hero-icon">🤖</div>
+      <p class="eyebrow">BILIMINGIZNI SINAB KO‘RING</p>
+      <h1>ROBOTOTEXNIKA<br><span>BILIMDONI</span></h1>
+      <p class="subtitle">Robotlar, elektronika, sensorlar va avtomatlashtirish olamiga xush kelibsiz!</p>
+
+      <div class="stats">
+        <div><strong>4</strong><small>Daraja</small></div>
+        <div><strong>10</strong><small>Savol</small></div>
+        <div><strong>20s</strong><small>Har savolga</small></div>
+      </div>
+
+      <h2 class="choose-title">DARAJANI TANLANG</h2>
+      <div class="levels">
+        <button class="level-card" data-level="beginner">
+          <span>01</span><div><b>BOSHLANG‘ICH</b><small>Asosiy tushunchalar</small></div><span class="arrow">→</span>
+        </button>
+        <button class="level-card" data-level="intermediate">
+          <span>02</span><div><b>O‘RTA</b><small>Elektronika va dasturlash</small></div><span class="arrow">→</span>
+        </button>
+        <button class="level-card" data-level="advanced">
+          <span>03</span><div><b>YUQORI</b><small>Murakkab tizimlar</small></div><span class="arrow">→</span>
+        </button>
+        <button class="level-card" data-level="expert">
+          <span>04</span><div><b>EKSPERT</b><small>Ilg‘or robototexnika</small></div><span class="arrow">→</span>
+        </button>
+      </div>
+      <p class="credit">Loyiha muallifi: AKRAMJONOVA JADRA MARATOVNA</p>
+    </section>
+
+    <section id="quiz" class="screen">
+      <div class="quiz-top">
+        <button id="exitBtn" class="text-btn">← Chiqish</button>
+        <span id="levelName" class="level-badge"></span>
+      </div>
+      <div class="progress-info">
+        <span id="questionNumber">1 / 10</span>
+        <span id="timer">20 soniya</span>
+      </div>
+      <div class="progress-track"><div id="progressBar"></div></div>
+      <div class="question-card">
+        <p class="eyebrow">SAVOL</p>
+        <h2 id="questionText"></h2>
+        <div id="answers" class="answers"></div>
+      </div>
+      <p id="feedback" class="feedback"></p>
+      <button id="nextBtn" class="main-btn" disabled>Keyingi savol →</button>
+    </section>
+
+    <section id="result" class="screen">
+      <div class="hero-icon">🏆</div>
+      <p class="eyebrow">TEST YAKUNLANDI</p>
+      <h1>NATIJA <span>TAHLILI</span></h1>
+      <div class="result-score">
+        <strong id="scorePercent">0%</strong>
+        <span id="scoreText">0 / 10 ta to‘g‘ri</span>
+      </div>
+      <p id="resultMessage" class="subtitle"></p>
+      <div class="result-actions">
+        <button id="retryBtn" class="main-btn">Qayta ishlash</button>
+        <button id="homeBtn" class="secondary-btn">Bosh sahifaga</button>
+      </div>
+      <h2 class="choose-title">JAVOBLAR TAHLILI</h2>
+      <div id="reviewList" class="review-list"></div>
+      <p class="credit">Loyiha muallifi: AKRAMJONOVA JADRA MARATOVNA</p>
+    </section>
+  </main>
+
+  <footer>© 2026 ROBO TECH | BILIM VA TEXNOLOGIYA</footer>
+  <script src="script.js"></script>
+</body>
+</html>
